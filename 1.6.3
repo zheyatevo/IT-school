@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		int CHI = in.nextInt();
+	
+		    //для тысяч
+		    for(int i=0;i<CHI/1000;i++){
+		        System.out.print("M");
+		    }
+		   
+		    int PI =CHI - 1000*(CHI/1000);
+		  //System.out.print(PI);
+		  if(PI<1000){
+		  if(PI>=500){ if(PI<600){ System.out.print("D");}
+		    if (PI-500 >= 400){System.out.print("CM");} 
+		  if(PI>=600 && PI<900){System.out.print("D");for(int i=0;i<(PI-500)/100;i++){ System.out.print("C"); }}}
+		  
+		    if(PI<500){
+		        if(PI>=400){System.out.print("CD");}
+		       // {System.out.println("CD") для 400
+		        if(PI/100 >0){
+		            if (PI<400){for(int i=0;i<PI/100;i++){System.out.print("C");}}}}
+		            
+		   
+		         //для меньше 100   
+		     // System.out.println(PI);      
+		   int HI =PI-PI/100*100;
+		  //System.out.println(HI);
+		   if(HI <100){
+		       if(HI>=50){
+		    if(HI>=50  && HI<60){System.out.print("L"); }
+		    if (HI-50 >= 40){System.out.print("XC");} 
+		  if(HI>=60 && HI<90){System.out.print("L");for(int i=0;i<(HI-50)/10;i++){ System.out.print("X"); }}
+		  }
+		    else{
+		        if(HI>=40){System.out.print("XL");}
+		       
+		        if(HI/10 >0){
+		            if (HI<40){for(int i=0;i<HI/10;i++){System.out.print("X");}}}}}
+		            
+		            
+		             int LI =HI-HI/10*10;
+		             //System.out.println(LI);
+		//для меньше10
+	if(LI == 5){System.out.print("V")  ; }
+	if(LI == 9){System.out.print("IX")  ; }
+	if(LI == 4){System.out.print("IV")  ; }
+	if(LI>=6 && LI<9){System.out.print("V")  ; for(int i=0;i<LI-5;i++){System.out.print("I")  ;} }
+	if(LI<4 && LI>=1){for(int i=0;i<LI;i++){System.out.print("I")  ;}}	      
+	
+		  }
+		}
+}
+
+
