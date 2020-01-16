@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] argv) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();int g=0;
+        for(int i=10000;i<100000;i++){
+            if ((i%a==b)&&(i%c==d)){System.out.print(i+" "); g=1;}
+            
+        }
+        if(g==0){System.out.print(-1);}
+    }
+}
