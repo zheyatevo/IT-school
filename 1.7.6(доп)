@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] argv) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int x = 10;
+        int f =0;
+
+        while (n >0){
+            if(n%10==(n-n%10)/10%10){f=1;}
+            n=(n-n%10)/10;
+         }
+        switch(f){
+            case 1:
+                System.out.print("YES");
+                break;
+            case 0:
+                System.out.print("NO");}
+
+        }
+    }
