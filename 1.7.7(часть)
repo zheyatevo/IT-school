@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] argv) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int n = in.nextInt();
+        int res;
+        if (n % 2 == 0) {
+            for (int i = 1; i < (n / 2); i++) {
+                a= a * a;
+                System.out.print(a+" "); }
+            res = a*a;
+            System.out.print(res);
+        } else {
+            for(int i=1;i<(n-1);i++){
+                a=  a* a;System.out.print(i+" ");
+        }
+            res = a*a; System.out.print(res);
+        }
+    }
+}
+
