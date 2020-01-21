@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] argv) {
+        Scanner in = new Scanner(System.in);
+        int  []n = new int [100];
+        int a=1;int g=0;
+
+
+for (int i =0;i<100;i++) {
+    n[i] = in.nextInt();
+    a = n[i]; g=g+1;
+    if (a==0){ g=g-1;
+        System.out.println("массив "+g);break;
+    }
+}
+
+
+    }
+}
